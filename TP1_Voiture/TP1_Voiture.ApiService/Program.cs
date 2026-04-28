@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Scalar.AspNetCore;
 using TP1_Voiture.ApiService.Data;
+using TP1_Voiture.ApiService.Features.Locations.Reserver;
 using TP1_Voiture.ApiService.Features.Voiture.GetCatalogue;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,6 +16,8 @@ builder.Services.AddProblemDetails();
 builder.Services.AddOpenApi();
 
 builder.AddNpgsqlDbContext<RentalDbContext>("RentalDb");
+
+builder.Services.AddScoped<LocationService>();
 
 var app = builder.Build();
 
@@ -91,6 +94,7 @@ app.MapGet("/weatherforecast", () =>
 app.MapDefaultEndpoints();
 
 app.MapListVoitures();
+app.MapReserver();
 
 app.Run();
 
