@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zSibZ2JC8gc=",
+  "dgSpecHash": "ltaAmGI49as=",
   "success": true,
   "projectFilePath": "C:\\Users\\emipe\\OneDrive\\Documents\\Moi\\Ecole\\IRC\\4IRC\\ASI.NET\\asi.net\\TP1_Voiture\\TP1_Voiture.AppHost\\TP1_Voiture.AppHost.csproj",
   "expectedPackageFiles": [
@@ -8,7 +8,9 @@
     "C:\\Users\\emipe\\.nuget\\packages\\aspire.hosting\\13.2.4\\aspire.hosting.13.2.4.nupkg.sha512",
     "C:\\Users\\emipe\\.nuget\\packages\\aspire.hosting.apphost\\13.2.4\\aspire.hosting.apphost.13.2.4.nupkg.sha512",
     "C:\\Users\\emipe\\.nuget\\packages\\aspire.hosting.orchestration.win-x64\\13.2.4\\aspire.hosting.orchestration.win-x64.13.2.4.nupkg.sha512",
+    "C:\\Users\\emipe\\.nuget\\packages\\aspire.hosting.postgresql\\13.2.4\\aspire.hosting.postgresql.13.2.4.nupkg.sha512",
     "C:\\Users\\emipe\\.nuget\\packages\\aspire.hosting.redis\\13.2.4\\aspire.hosting.redis.13.2.4.nupkg.sha512",
+    "C:\\Users\\emipe\\.nuget\\packages\\aspnetcore.healthchecks.npgsql\\9.0.0\\aspnetcore.healthchecks.npgsql.9.0.0.nupkg.sha512",
     "C:\\Users\\emipe\\.nuget\\packages\\aspnetcore.healthchecks.redis\\9.0.0\\aspnetcore.healthchecks.redis.9.0.0.nupkg.sha512",
     "C:\\Users\\emipe\\.nuget\\packages\\aspnetcore.healthchecks.uris\\9.0.0\\aspnetcore.healthchecks.uris.9.0.0.nupkg.sha512",
     "C:\\Users\\emipe\\.nuget\\packages\\fractions\\7.3.0\\fractions.7.3.0.nupkg.sha512",
@@ -67,6 +69,7 @@
     "C:\\Users\\emipe\\.nuget\\packages\\modelcontextprotocol.core\\1.0.0\\modelcontextprotocol.core.1.0.0.nupkg.sha512",
     "C:\\Users\\emipe\\.nuget\\packages\\nerdbank.streams\\2.12.87\\nerdbank.streams.2.12.87.nupkg.sha512",
     "C:\\Users\\emipe\\.nuget\\packages\\newtonsoft.json\\13.0.4\\newtonsoft.json.13.0.4.nupkg.sha512",
+    "C:\\Users\\emipe\\.nuget\\packages\\npgsql\\8.0.3\\npgsql.8.0.3.nupkg.sha512",
     "C:\\Users\\emipe\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.8\\pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
     "C:\\Users\\emipe\\.nuget\\packages\\polly.core\\8.6.5\\polly.core.8.6.5.nupkg.sha512",
     "C:\\Users\\emipe\\.nuget\\packages\\semver\\3.0.0\\semver.3.0.0.nupkg.sha512",
@@ -74,8 +77,6 @@
     "C:\\Users\\emipe\\.nuget\\packages\\streamjsonrpc\\2.22.23\\streamjsonrpc.2.22.23.nupkg.sha512",
     "C:\\Users\\emipe\\.nuget\\packages\\system.diagnostics.eventlog\\10.0.5\\system.diagnostics.eventlog.10.0.5.nupkg.sha512",
     "C:\\Users\\emipe\\.nuget\\packages\\system.io.hashing\\10.0.3\\system.io.hashing.10.0.3.nupkg.sha512",
-    "C:\\Users\\emipe\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
-    "C:\\Users\\emipe\\.nuget\\packages\\system.text.json\\10.0.5\\system.text.json.10.0.5.nupkg.sha512",
     "C:\\Users\\emipe\\.nuget\\packages\\yamldotnet\\16.3.0\\yamldotnet.16.3.0.nupkg.sha512"
   ],
   "logs": []

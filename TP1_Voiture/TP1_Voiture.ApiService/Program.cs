@@ -1,3 +1,8 @@
+using Microsoft.EntityFrameworkCore;
+using Scalar.AspNetCore;
+using TP1_Voiture.ApiService.Data;
+using TP1_Voiture.ApiService.Features.Voiture.GetCatalogue;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add service defaults & Aspire client integrations.
@@ -9,15 +14,60 @@ builder.Services.AddProblemDetails();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
+builder.AddNpgsqlDbContext<RentalDbContext>("RentalDb");
+
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-app.UseExceptionHandler();
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    try
+    {
+        var context = services.GetRequiredService<RentalDbContext>();
+
+        // Retry pour attendre que PostgreSQL soit prêt
+        var retries = 10;
+        while (retries > 0)
+        {
+            try
+            {
+                await context.Database.CanConnectAsync();
+                break;
+            }
+            catch
+            {
+                retries--;
+                Console.WriteLine($"PostgreSQL pas encore prêt, {retries} essais restants...");
+                await Task.Delay(3000); // Attend 3 secondes
+            }
+        }
+        
+        
+        await context.Database.MigrateAsync();
+        await SeedData.Initialize(context);
+
+        Console.WriteLine("BD prête et remplie !");
+    }
+    catch (Exception ex)
+    {
+        var logger = services.GetRequiredService<ILogger<Program>>();
+        logger.LogError(ex, message: "Erreur lors de l'initialisation de la BD.");
+    }
+}
 
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
+    app.MapScalarApiReference(options =>
+        {
+            options.WithTitle("Location Auto API")
+                .WithTheme(ScalarTheme.Moon)
+                .WithDefaultHttpClient(ScalarTarget.CSharp, ScalarClient.HttpClient);
+        });
 }
+
+// Configure the HTTP request pipeline.
+app.UseExceptionHandler();
 
 string[] summaries =
     ["Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"];
@@ -39,6 +89,8 @@ app.MapGet("/weatherforecast", () =>
     .WithName("GetWeatherForecast");
 
 app.MapDefaultEndpoints();
+
+app.MapListVoitures();
 
 app.Run();
 

@@ -25,7 +25,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TP1_Voiture.AppHost")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+76deb3b64286d227a57219c39214d22ea7df6256")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f7fc3c2b0365b89ca10a7fad55a72e3b703771c6")]
 [assembly: System.Reflection.AssemblyProductAttribute("TP1_Voiture.AppHost")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TP1_Voiture.AppHost")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

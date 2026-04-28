@@ -9,12 +9,13 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\TP1_Voiture.ApiService\TP1_Voiture.ApiService.csproj"/>
-        <ProjectReference Include="..\TP1_Voiture.Web\TP1_Voiture.Web.csproj"/>
+        <ProjectReference Include="..\TP1_Voiture.ApiService\TP1_Voiture.ApiService.csproj" />
+        <ProjectReference Include="..\TP1_Voiture.Web\TP1_Voiture.Web.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Aspire.Hosting.Redis" Version="13.2.4"/>
+        <PackageReference Include="Aspire.Hosting.PostgreSQL" Version="13.2.4" />
+        <PackageReference Include="Aspire.Hosting.Redis" Version="13.2.4" />
     </ItemGroup>
 
 </Project>
