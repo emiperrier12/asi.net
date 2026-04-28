@@ -1,0 +1,88 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\emipe\\OneDrive\\Documents\\Moi\\Ecole\\IRC\\4IRC\\ASI.NET\\asi.net\\TP1_Voiture\\TP1_Voiture.AppHost\\TP1_Voiture.AppHost.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\emipe\\OneDrive\\Documents\\Moi\\Ecole\\IRC\\4IRC\\ASI.NET\\asi.net\\TP1_Voiture\\TP1_Voiture.AppHost\\TP1_Voiture.AppHost.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\emipe\\OneDrive\\Documents\\Moi\\Ecole\\IRC\\4IRC\\ASI.NET\\asi.net\\TP1_Voiture\\TP1_Voiture.AppHost\\TP1_Voiture.AppHost.csproj",
+        "projectName": "TP1_Voiture.AppHost",
+        "projectPath": "C:\\Users\\emipe\\OneDrive\\Documents\\Moi\\Ecole\\IRC\\4IRC\\ASI.NET\\asi.net\\TP1_Voiture\\TP1_Voiture.AppHost\\TP1_Voiture.AppHost.csproj",
+        "packagesPath": "C:\\Users\\emipe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\emipe\\OneDrive\\Documents\\Moi\\Ecole\\IRC\\4IRC\\ASI.NET\\asi.net\\TP1_Voiture\\TP1_Voiture.AppHost\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\emipe\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net10.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net10.0": {
+            "targetAlias": "net10.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net10.0": {
+          "targetAlias": "net10.0",
+          "dependencies": {
+            "Aspire.Dashboard.Sdk.win-x64": {
+              "target": "Package",
+              "version": "[13.2.4, )",
+              "autoReferenced": true
+            },
+            "Aspire.Hosting.AppHost": {
+              "target": "Package",
+              "version": "[13.2.4, )",
+              "autoReferenced": true
+            },
+            "Aspire.Hosting.Orchestration.win-x64": {
+              "target": "Package",
+              "version": "[13.2.4, )",
+              "autoReferenced": true
+            },
+            "Aspire.Hosting.Redis": {
+              "target": "Package",
+              "version": "[13.2.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\emipe\\.dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
