@@ -22,6 +22,9 @@ public class Location
     [Column("loc_datefin")]
     public DateTime DateFin { get; set; }
 
+    [Column("loc_annule")]
+    public bool  IsAnnuler { get; set; }
+    
     // Navigation
     [ForeignKey("VoitureId")]
     public Voiture Voiture { get; set; } = null!;

@@ -1,7 +1,10 @@
 using Microsoft.EntityFrameworkCore;
 using Scalar.AspNetCore;
 using TP1_Voiture.ApiService.Data;
+using TP1_Voiture.ApiService.Features.Locations.GetAll;
+using TP1_Voiture.ApiService.Features.Locations.GetLocationsByImmatVoiture;
 using TP1_Voiture.ApiService.Features.Locations.Reserver;
+using TP1_Voiture.ApiService.Features.Locations.UndoLocation;
 using TP1_Voiture.ApiService.Features.Voiture.GetCatalogue;
 using TP1_Voiture.ApiService.Features.Voiture.GetDetail.CreateNewVehicule;
 using TP1_Voiture.ApiService.Features.Voiture.GetDetail.GetVoitureById;
@@ -105,6 +108,10 @@ app.MapGetVoitureByImmatriculationEndpoint();
 app.MapCreateNewVehiculeEndpoint();
 app.MapUpdateVoitureEndpoint();
 app.MapUpdatePrixLocationParJourEndpoint();
+
+app.MapUndoLocationEndpoint();
+app.MapGetAllLocationEndpoint();
+app.MapGetLocationsByImmatVoitureEndpoint();
 
 app.Run();
 
