@@ -6,6 +6,8 @@ using TP1_Voiture.ApiService.Features.Voiture.GetCatalogue;
 using TP1_Voiture.ApiService.Features.Voiture.GetDetail.CreateNewVehicule;
 using TP1_Voiture.ApiService.Features.Voiture.GetDetail.GetVoitureById;
 using TP1_Voiture.ApiService.Features.Voiture.GetDetail.GetVoitureByImmatriculation;
+using TP1_Voiture.ApiService.Features.Voiture.GetDetail.ModifPrixParJour;
+using TP1_Voiture.ApiService.Features.Voiture.GetDetail.UpdateAVoiture;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -101,6 +103,8 @@ app.MapReserver();
 app.MapGetVoitureByIdEndpoint();
 app.MapGetVoitureByImmatriculationEndpoint();
 app.MapCreateNewVehiculeEndpoint();
+app.MapUpdateVoitureEndpoint();
+app.MapUpdatePrixLocationParJourEndpoint();
 
 app.Run();
 

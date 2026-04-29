@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TP1_Voiture.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f7fc3c2b0365b89ca10a7fad55a72e3b703771c6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+23e9a0757bedc20ab92e1d88c31775808aab032a")]
 [assembly: System.Reflection.AssemblyProductAttribute("TP1_Voiture.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TP1_Voiture.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
