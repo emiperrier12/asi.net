@@ -1,2 +1,55 @@
-.idea
-.git
+# Build outputs
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+*.DotSettings.user
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Docker / Podman
+docker-compose.override.yml
+
+# Secrets & config locaux
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+*.pfx
+*.pem
+
+# Coverage & tests
+TestResults/
+coverage/
+*.coveragexml
+*.coverage
+
+# Migrations générées (optionnel - à décommenter si tu ne veux pas versionner les migrations)
+# Migrations/
+
+# Temporaire
+*.tmp
+*.temp
+~$*
