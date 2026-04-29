@@ -8,7 +8,7 @@ public static class GetLocationsByImmatVoitureEndpoint
 {
     public static void MapGetLocationsByImmatVoitureEndpoint(this IEndpointRouteBuilder app)
     {
-        app.MapGet("/location/{Immat_Voiture}", async (
+        app.MapGet("/locations/{Immat_Voiture}", async (
             string  Immat_Voiture,
             RentalDbContext db) =>
         {

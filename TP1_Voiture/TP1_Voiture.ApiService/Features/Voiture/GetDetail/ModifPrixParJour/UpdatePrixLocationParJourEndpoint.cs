@@ -6,7 +6,7 @@ public static class UpdatePrixLocationParJourEndpoint
 {
     public static void MapUpdatePrixLocationParJourEndpoint(this IEndpointRouteBuilder app)
     {
-        app.MapPatch("/voiture_prix_location", async (
+        app.MapPatch("/voitures", async (
                 UpdatePrixLocationWithImmatRequest req,
                 RentalDbContext db
             ) =>

@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TP1_Voiture.Web", "TP1_Voit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TP1_Voiture.Tests", "TP1_Voiture.Tests\TP1_Voiture.Tests.csproj", "{1298791F-0BE5-471D-919B-CC7F7CB63FEA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Location_Gateway", "Location_Gateway\Location_Gateway.csproj", "{79F3AA8E-79BF-4D16-B245-C756DF5C40E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{1298791F-0BE5-471D-919B-CC7F7CB63FEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1298791F-0BE5-471D-919B-CC7F7CB63FEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1298791F-0BE5-471D-919B-CC7F7CB63FEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79F3AA8E-79BF-4D16-B245-C756DF5C40E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79F3AA8E-79BF-4D16-B245-C756DF5C40E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79F3AA8E-79BF-4D16-B245-C756DF5C40E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79F3AA8E-79BF-4D16-B245-C756DF5C40E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

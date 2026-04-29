@@ -6,7 +6,7 @@ public static class UndoLocationEndpoint
 {
     public static void MapUndoLocationEndpoint(this IEndpointRouteBuilder app)
     {
-        app.MapPatch("/location/{idLocation}/annuler", async (
+        app.MapPatch("/locations/{idLocation}/annuler", async (
             int idLocation,
             RentalDbContext db) =>
         {

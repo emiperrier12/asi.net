@@ -7,7 +7,7 @@ public static class CreateVoitureEndpoint
 {
     public static void MapCreateNewVehiculeEndpoint(this IEndpointRouteBuilder app)
     {
-        app.MapPost("/create_vehicule", async (
+        app.MapPost("/voitures", async (
                 VoitureCreateRequest req,
                 RentalDbContext db) =>
             {

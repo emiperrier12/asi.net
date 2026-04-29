@@ -6,7 +6,7 @@ public static class UpdateVoitureEndpoint
 {
     public static void MapUpdateVoitureEndpoint(this IEndpointRouteBuilder app)
     {
-        app.MapPut("/vehicule", async (
+        app.MapPut("/voitures", async (
                 UpdateVoitureRequest req,
                 RentalDbContext db
             ) =>
