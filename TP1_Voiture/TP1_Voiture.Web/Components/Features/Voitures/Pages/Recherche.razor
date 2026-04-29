@@ -1,0 +1,94 @@
+@page "/voitures/recherche"
+@rendermode InteractiveServer
+@inject VoitureApiClient VoitureApi
+@using TP1_Voiture.Web.Components.Features.Voitures
+
+<PageTitle>Rechercher une voiture</PageTitle>
+
+<h1>Rechercher une voiture</h1>
+
+<div class="mb-3">
+    <label class="form-label">Immatriculation</label>
+    <input class="form-control" @bind="immatriculation" placeholder="Ex: AA-123-BB" />
+</div>
+<button class="btn btn-primary" @onclick="Rechercher">Rechercher</button>
+
+@if (erreur)
+{
+    <div class="alert alert-danger mt-3">Voiture introuvable.</div>
+}
+else if (voiture != null)
+{
+    <h3 class="mt-4">Voiture</h3>
+    <table class="table mt-3">
+        <thead>
+            <tr>
+                <th>Immatriculation</th>
+                <th>Marque</th>
+                <th>Modèle</th>
+                <th>Catégorie</th>
+                <th>Prix/jour</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@voiture.Immatriculation</td>
+                <td>@voiture.Marque</td>
+                <td>@voiture.Modele</td>
+                <td>@voiture.Categorie</td>
+                <td>@voiture.PrixLocationParJour €</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3 class="mt-4">Locations</h3>
+    @if (locations == null || locations.Length == 0)
+    {
+        <p>Aucune location pour cette voiture.</p>
+    }
+    else
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Date début</th>
+                    <th>Date fin</th>
+                    <th>Annulée</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var location in locations)
+                {
+                    <tr>
+                        <td>@location.DateDebut.ToShortDateString()</td>
+                        <td>@location.DateFin.ToShortDateString()</td>
+                        <td>@(location.IsAnnuler ? "Oui" : "Non")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+}
+
+@code {
+    private string immatriculation = string.Empty;
+    private VoitureDto? voiture;
+    private LocationDto[]? locations;
+    private bool erreur = false;
+
+    private async Task Rechercher()
+    {
+        erreur = false;
+        voiture = null;
+        locations = null;
+        try
+        {
+            voiture = await VoitureApi.GetVoitureByImmatriculationAsync(immatriculation);
+            locations = await VoitureApi.GetLocationsByImmatriculationAsync(immatriculation);
+        }
+        catch
+        {
+            erreur = true;
+        }
+    }
+}

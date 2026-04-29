@@ -11,7 +11,7 @@ var apiService = builder.AddProject<Projects.TP1_Voiture_ApiService>(name: "apis
     .WithHttpHealthCheck(path: "/health")
     .WithReference(database);
 
-builder.AddProject<Projects.Location_Gateway>("gateway")
+var gateway = builder.AddProject<Projects.Location_Gateway>("gateway") 
     .WithReference(apiService)
     .WithExternalHttpEndpoints();
 
@@ -20,7 +20,7 @@ builder.AddProject<Projects.TP1_Voiture_Web>("webfrontend")
     .WithHttpHealthCheck("/health")
     .WithReference(cache)
     .WaitFor(cache)
-    .WithReference(apiService)
-    .WaitFor(apiService);
+    .WithReference(gateway)
+    .WaitFor(gateway);
 
 builder.Build().Run();

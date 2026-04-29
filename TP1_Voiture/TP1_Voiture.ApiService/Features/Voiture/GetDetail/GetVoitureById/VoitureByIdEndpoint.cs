@@ -20,7 +20,7 @@ public static class VoitureByIdEndpoint
                 .FirstOrDefaultAsync(v => v.Id == id);
 
             if (voiture == null)
-                Results.NotFound();
+                return Results.NotFound();
 
             var response = new VoitureDto(
                 voiture.Immatriculation,

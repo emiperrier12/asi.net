@@ -1,0 +1,47 @@
+@page "/voitures"
+@using TP1_Voiture.Web.Components.Features.Voitures
+@inject VoitureApiClient VoitureApi
+
+<PageTitle>Catalogue des voitures</PageTitle>
+
+<h1>Catalogue des voitures</h1>
+
+@if (voitures == null)
+{
+    <p>Chargement...</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Immatriculation</th>
+            <th>Marque</th>
+            <th>Modèle</th>
+            <th>Catégorie</th>
+            <th>Prix/jour</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var voiture in voitures)
+        {
+            <tr>
+                <td>@voiture.Immatriculation</td>
+                <td>@voiture.Marque</td>
+                <td>@voiture.Modele</td>
+                <td>@voiture.Categorie</td>
+                <td>@voiture.PrixLocationParJour €</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+
+@code {
+    private VoitureDto[]? voitures;
+
+    protected override async Task OnInitializedAsync()
+    {
+        voitures = await VoitureApi.GetVoituresAsync();
+    }
+}

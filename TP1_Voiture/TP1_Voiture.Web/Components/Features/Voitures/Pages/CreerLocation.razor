@@ -1,0 +1,74 @@
+@page "/locations/creer"
+@rendermode InteractiveServer
+@inject VoitureApiClient VoitureApi
+@using TP1_Voiture.Web.Components.Features.Voitures
+@inject NavigationManager Nav
+
+<PageTitle>Créer une location</PageTitle>
+
+<h1>Créer une location</h1>
+
+@if (succes)
+{
+    <div class="alert alert-success">Location créée avec succès !</div>
+}
+@if (erreur)
+{
+    <div class="alert alert-danger">Erreur lors de la création de la location.</div>
+}
+
+<div class="mb-3">
+    <label class="form-label">Immatriculation</label>
+    <input class="form-control" @bind="form.Immatriculation" placeholder="Ex: AA-123-BB" />
+</div>
+
+<div class="mb-3">
+    <label class="form-label">ID Loueur</label>
+    <input type="number" class="form-control" @bind="form.LoueurId" />
+</div>
+
+<div class="mb-3">
+    <label class="form-label">Date de début</label>
+    <input type="date" class="form-control" @bind="form.DateDebut" />
+</div>
+
+<div class="mb-3">
+    <label class="form-label">Date de fin</label>
+    <input type="date" class="form-control" @bind="form.DateFin" />
+</div>
+
+<button class="btn btn-primary" @onclick="Soumettre">Créer la location</button>
+
+@code {
+    private CreateLocationDto form = new();
+    private bool succes = false;
+    private bool erreur = false;
+
+    private async Task Soumettre()
+    {
+        succes = false;
+        erreur = false;
+
+        if (string.IsNullOrWhiteSpace(form.Immatriculation) || 
+            form.LoueurId <= 0 || 
+            form.DateDebut == default || 
+            form.DateFin == default ||
+            form.DateFin <= form.DateDebut)
+        {
+            erreur = true;
+            return;
+        }
+
+        // --- CORRECTION ICI ---
+        // On crée une copie ou on modifie l'objet pour s'assurer du format UTC
+        form.DateDebut = DateTime.SpecifyKind(form.DateDebut, DateTimeKind.Utc);
+        form.DateFin = DateTime.SpecifyKind(form.DateFin, DateTimeKind.Utc);
+        // -----------------------
+
+        var ok = await VoitureApi.CreateLocationAsync(form);
+        if (ok)
+            succes = true;
+        else
+            erreur = true;
+    }
+}

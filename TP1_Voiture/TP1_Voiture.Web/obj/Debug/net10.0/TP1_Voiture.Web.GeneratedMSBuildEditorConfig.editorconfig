@@ -26,6 +26,18 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/emipe/OneDrive/Documents/Moi/Ecole/IRC/4IRC/ASI.NET/asi.net/TP1_Voiture/TP1_Voiture.Web/Components/Features/Voitures/Pages/Catalogue.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xGZWF0dXJlc1xWb2l0dXJlc1xQYWdlc1xDYXRhbG9ndWUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emipe/OneDrive/Documents/Moi/Ecole/IRC/4IRC/ASI.NET/asi.net/TP1_Voiture/TP1_Voiture.Web/Components/Features/Voitures/Pages/CreerLocation.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xGZWF0dXJlc1xWb2l0dXJlc1xQYWdlc1xDcmVlckxvY2F0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emipe/OneDrive/Documents/Moi/Ecole/IRC/4IRC/ASI.NET/asi.net/TP1_Voiture/TP1_Voiture.Web/Components/Features/Voitures/Pages/Recherche.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xGZWF0dXJlc1xWb2l0dXJlc1xQYWdlc1xSZWNoZXJjaGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/emipe/OneDrive/Documents/Moi/Ecole/IRC/4IRC/ASI.NET/asi.net/TP1_Voiture/TP1_Voiture.Web/Components/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
