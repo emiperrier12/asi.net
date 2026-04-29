@@ -1,3 +1,4 @@
+using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 using Scalar.AspNetCore;
 using TP1_Voiture.ApiService.Data;
@@ -26,6 +27,8 @@ builder.Services.AddOpenApi();
 builder.AddNpgsqlDbContext<RentalDbContext>("RentalDb");
 
 builder.Services.AddScoped<LocationService>();
+
+builder.Services.AddScoped<IValidator<ReserverRequest>, ReserverRequestValidator>();
 
 var app = builder.Build();
 

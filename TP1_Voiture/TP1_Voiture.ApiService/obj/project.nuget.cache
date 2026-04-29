@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Mh6Px6fRX2I=",
+  "dgSpecHash": "05M3S+2m52k=",
   "success": true,
   "projectFilePath": "C:\\Users\\emipe\\OneDrive\\Documents\\Moi\\Ecole\\IRC\\4IRC\\ASI.NET\\asi.net\\TP1_Voiture\\TP1_Voiture.ApiService\\TP1_Voiture.ApiService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\emipe\\.nuget\\packages\\aspire.npgsql.entityframeworkcore.postgresql\\13.2.4\\aspire.npgsql.entityframeworkcore.postgresql.13.2.4.nupkg.sha512",
+    "C:\\Users\\emipe\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
+    "C:\\Users\\emipe\\.nuget\\packages\\fluentassertions\\8.9.0\\fluentassertions.8.9.0.nupkg.sha512",
+    "C:\\Users\\emipe\\.nuget\\packages\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512",
     "C:\\Users\\emipe\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\emipe\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.5\\microsoft.aspnetcore.openapi.10.0.5.nupkg.sha512",
     "C:\\Users\\emipe\\.nuget\\packages\\microsoft.build.framework\\18.0.2\\microsoft.build.framework.18.0.2.nupkg.sha512",
@@ -40,6 +43,7 @@
     "C:\\Users\\emipe\\.nuget\\packages\\npgsql.dependencyinjection\\10.0.1\\npgsql.dependencyinjection.10.0.1.nupkg.sha512",
     "C:\\Users\\emipe\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\10.0.1\\npgsql.entityframeworkcore.postgresql.10.0.1.nupkg.sha512",
     "C:\\Users\\emipe\\.nuget\\packages\\npgsql.opentelemetry\\10.0.1\\npgsql.opentelemetry.10.0.1.nupkg.sha512",
+    "C:\\Users\\emipe\\.nuget\\packages\\nsubstitute\\5.3.0\\nsubstitute.5.3.0.nupkg.sha512",
     "C:\\Users\\emipe\\.nuget\\packages\\opentelemetry\\1.15.3\\opentelemetry.1.15.3.nupkg.sha512",
     "C:\\Users\\emipe\\.nuget\\packages\\opentelemetry.api\\1.15.3\\opentelemetry.api.1.15.3.nupkg.sha512",
     "C:\\Users\\emipe\\.nuget\\packages\\opentelemetry.api.providerbuilderextensions\\1.15.3\\opentelemetry.api.providerbuilderextensions.1.15.3.nupkg.sha512",

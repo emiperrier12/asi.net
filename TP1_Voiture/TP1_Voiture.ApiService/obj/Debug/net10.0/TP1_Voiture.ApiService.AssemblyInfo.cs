@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TP1_Voiture.ApiService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a1bb8a68d9a11fee8d9af4e01530ce529a9124ea")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c0fe297f5afeda5795a82d41308a4e646753923")]
 [assembly: System.Reflection.AssemblyProductAttribute("TP1_Voiture.ApiService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TP1_Voiture.ApiService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
